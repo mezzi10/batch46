@@ -1,7 +1,14 @@
-package com.messi.model;
+package com.messi.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.messi.dao.Repository;
+import com.messi.model.Agent;
+import com.messi.model.Branch;
+import com.messi.model.BranchManager;
+import com.messi.model.CEO;
+import com.messi.model.Customer;
 
 
 @Service

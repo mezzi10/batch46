@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.messi.model.Branch;
 import com.messi.model.Customer;
 import com.messi.model.Policy;
-import com.messi.model.UserService;
+import com.messi.service.UserService;
 
 
 @RestController

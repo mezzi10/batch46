@@ -1,9 +1,15 @@
 package com.messi.model;
 
+
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+
+@Entity
 public class CustomerPolicyRegistration {
-  
+    
+	@GeneratedValue
 	private int cust_policy_id;
 	private int cust_id;
 	private int policy_id;//link to policy

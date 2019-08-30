@@ -1,4 +1,4 @@
-package com.messi.model;
+package com.messi.dao;
 
 import org.springframework.data.repository.CrudRepository;
 
