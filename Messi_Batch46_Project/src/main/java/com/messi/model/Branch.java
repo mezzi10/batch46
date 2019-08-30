@@ -30,15 +30,12 @@ public class Branch {
 	
 	public Branch() {}
 	
-	public Branch(int branch_id, String branch_name, String address, String phone, String location, Date date,
-			String city, String state) {
-		super();
-		this.branch_id = branch_id;
+	public Branch(String branch_name, String address, String phone, String location, String city, String state) {
+		
 		this.branch_name = branch_name;
 		this.address = address;
 		this.phone = phone;
-		this.location = location;
-		this.date = date;
+		this.location = location;		
 		this.city = city;
 		this.state = state;
 	}

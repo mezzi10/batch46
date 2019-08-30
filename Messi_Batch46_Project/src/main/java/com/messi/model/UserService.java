@@ -10,24 +10,37 @@ public class UserService {
 	@Autowired
 	private Repository repo;
 	
-	public void addUser(Object user) {
-		if(user instanceof Customer) {
-			user = (Customer) new Customer();
-			repo.save(user);
+	public void addUser(Object obj) {
+		
+		if(obj instanceof Customer) {
+			obj = (Customer) new Customer();
+			repo.save(obj);
 			
-		}else if(user instanceof Agent) {
-			user = new Agent();
-			repo.save(user);
-		}else if(user instanceof BranchManager) {
-			user = new BranchManager();
-			repo.save(user);
+		}else if(obj instanceof Agent) {
+			obj = new Agent();
+			repo.save(obj);
+		}else if(obj instanceof BranchManager) {
+			obj = new BranchManager();
+			repo.save(obj);
 			
-		}else if(user instanceof CEO) {
-			user = new CEO();
-			repo.save(user);
+		}else if(obj instanceof CEO) {
+			obj = new CEO();
+			repo.save(obj);
+		}else if(obj instanceof Branch) {
+			obj = new Branch();
+			repo.save(obj);
 		}
 	}
 	
+public void delete(int id) {
+		
+		repo.deleteById(id);
+	}
+	
+public void update(int id) {
+	
+	repo.save(id);
+}
 	
 
 }

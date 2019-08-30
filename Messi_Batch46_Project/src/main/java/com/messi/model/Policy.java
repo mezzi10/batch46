@@ -29,15 +29,13 @@ public class Policy {
 	
 	public Policy() {}
 	
-	public Policy(int policy_id, String policy_name, int policy_term, double policy_amount, float policy_interest,
-			Date date, String policy_type, double maturity_amount) {
-		super();
-		this.policy_id = policy_id;
+	public Policy(String policy_name, int policy_term, double policy_amount, float policy_interest,
+			String policy_type, double maturity_amount) {
+		
 		this.policy_name = policy_name;
 		this.policy_term = policy_term;
 		this.policy_amount = policy_amount;
-		this.policy_interest = policy_interest;
-		this.date = date;
+		this.policy_interest = policy_interest;		
 		this.policy_type = policy_type;
 		this.maturity_amount = maturity_amount;
 	}
